@@ -1,0 +1,119 @@
+Pipenv es la manera recomendada de instalar paquetes en un proyecto y administrar un entorno virtual.
+
+Requerimeintos
+
+Python 3.x
+Puedes comprobar la instalación usando los siguientes comandos
+
+$ python --version
+$ pip --version
+Copy
+este ultimo comando deberia mostrarte la ultima version de Python, que es la tres. Pero si estas en Linux o Mac, puede que tengas tanto python 2 como python 3, así que en esos casos puedes comprobalos de esta manera.
+
+$ python3 --version
+$ pip3 --version
+Copy
+Installation
+to install Pipenv you can execute the following command
+
+$ pip3 install pipenv
+Copy
+Una vez terminada la instalación, puedes comprobar los paquetes que tienes instalado en tu computador, o mejor dicho en tu entorno global (global environment) usando el comando freeze
+
+$ pip3 freeze
+Copy
+Aqui puedes darte una idea, que no todas las bibliotecas son necesarias para todos tus proyectos. sino que dependen.
+
+Para activar tu entorno con Pipenv.
+
+$ pipenv shell
+Copy
+Esto configurará tu entorno virtual y creará un archivo llamado Pipfile. el cual servira para listar todos las bibliotecas necesarias para tu proyecto y proveer metainformación.
+
+De hecho, debido a que estas utilizando tu entorno virtual, por defecto ya estas usando Python 3. compruebalo tipeando.
+
+$ python --version
+Copy
+Verás que estas usando la version 3. Y si quieres ver desde donde esta obteniendo esto, puedes comprobarlo usando el interprete de python y el modulo sys.
+
+import sys
+sys.executable
+Copy
+Para salir del entorno virtual, puedes executar simplement exit, desde tu terminal.
+
+$ exit
+Copy
+Esto desactivará el entorno y regresarás al entorno global. y en cuanto a volver activarlo tan solo vuelve a tipear pipenv shell.
+
+Para instalar paquetes, puedes hacer usando Pip. por ejemplo instalemos un modulo para tener colores en la terminal.
+
+$ pip install colorama
+Copy
+Esto creará un archivo llamado Pipfile.lock. el cual sirve para hacer un seguimiento de las versiones correctas de nuestros módulos. Pero en realidad, no es necesario y no deberiamos modificar ese archivo.
+
+Para utilizar este modulo puedes simplemente ejecutar python y tipear lo siguiente.
+
+from colorama import Fore, Style
+
+print(Fore.RED + 'Text in red')
+print(Style.RESET_ALL)
+Copy
+Y en caso quieres ver la lista de modulos instalados, puedes ejecutar
+
+$ pipenv lock -r
+Copy
+Para desistalar un modulo puedes usar.
+
+$ pipenv uninstall colorama
+Copy
+Esto lo quita de tu archivo Pipfile y lo remueve de tu entorno. Puedes comprobarlo ejecutando denuevo pipenv lock.
+
+Y en caso quieres intalar dependencias de desarrollo puedes hacerlo de la siguiente manera.
+
+$ pipenv install colorama --dev
+Copy
+Otra forma de instalar modulos es a traves de un archivo requirements.txt. Para hacerlo puedes probar usando Django.
+
+Crea un archivo requirements.txt con el siguiente contenido
+
+Django==2.2
+Copy
+Luego, ejecuta el siguiente comando para instalarlo con Pipenv.
+
+$ pipenv install -r requirements.txt
+Copy
+Esta es otra forma de instalarlo. Para comprobarlo crea un nuevo proyecto con Django.
+
+$ django-admin startproject hello
+$ cd hello
+$ python manage.py runserver
+Copy
+Un vez hecho esto, ya puedes ir al http://localhost:8000. y ver tu aplicación creada.
+
+Para ver vulnerabilidades puedes ejecutar el siguiente comando
+
+$ pipenv check
+Copy
+Y en caso necesites actualizar, tan solo cambia la version del paquete en Pipenv, y luego ejecuta
+
+$ pipenv install
+Copy
+Para ver el arbol de dependencias del proyecto
+
+$ pipenv graph
+Copy
+OK, en produccion
+
+$ pipenv lock
+Copy
+Y en caso quieres ignorar el archivo pipfile
+
+$ pipenv install --ignore-pipfile
+Copy
+para ejecutar el proyecto sin el entorno virtual
+
+$ pipenv run python
+Copy
+Finalmente para eliminar un environment ejecuta
+
+$ pipenv --rm
