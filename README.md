@@ -5,6 +5,17 @@
 
 cd project
 
+pip install virtualenv
+
+python -m venv venv or virtualenv <"nombre del projecto">
+
+venv\Scripts>activate
+
+
+#### Basic Commands to Activate my Project...
+
+cd project
+
 \venv\Scripts>activate
 
 (venv) C:\Users\brian\Desktop\flask-fix-py\venv\Scripts>pipenv shell
@@ -13,6 +24,7 @@ Microsoft Windows [Versión 10.0.18362.720]
 (c) 2019 Microsoft Corporation. Todos los derechos reservados.
 
 (Scripts-uFinIKPs) (venv) C:\Users\brian\Desktop\flask-fix-py\venv\Scripts>
+
 
 
 ### Source:
