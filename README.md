@@ -3,7 +3,7 @@ Crash Course: Viertualenv Windows &amp; Linux
 
 #### Basic Commands to Start & Activate my Project...
 
-Cd project
+cd project
 
 \venv\Scripts>activate
 
