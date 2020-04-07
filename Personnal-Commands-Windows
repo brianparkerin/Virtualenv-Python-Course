@@ -1,0 +1,46 @@
+
+>\project\src>pipenv install --ignore-pipfile
+__________________________________________________
+
+VIRUTALENV IN PYTHON:
+
+\project>pipenv install [package names]
+
+Nota: 'ejmp:  \project>pipenv install venv'
+
+>\project\venv\Scripts>activate
+
+Nota: 'ejmp: \project\venv\Scripts>activate/deactivate '
+
+>\project\venv\Scripts>pipenv shell
+
+... Nota: (Para salir del entorno virtual, puedes executar simplement exit, desde tu terminal.
+
+(Scripts-uFinIKPs) (venv) C:\Users\brian\Desktop\flask-fix-py\venv\Scripts>exit
+
+..... Esto desactivará el entorno y regresarás al entorno global. y en cuanto a volver activarlo tan solo vuelve a tipear pipenv shell.)
+
+Nota: para isntalar cualquier modulo o paquete: 
+(Scripts-uFinIKPs) (venv) C:\Users\brian\Desktop\flask-fix-py\venv\Scripts>pipenv install <package>
+
+(Scripts-uFinIKPs) (venv) C:\Users\brian\Desktop\flask-fix-py\venv\Scripts>pipenv install  --python==3.6.10
+
+(Scripts-uFinIKPs) (venv) C:\Users\brian\Desktop\flask-fix-py\venv\Scripts>pipenv install pip python requests==3.6.10
+
+(Scripts-uFinIKPs) (venv) C:\Users\brian\Desktop\flask-fix-py\venv\Scripts>pipenv install flask
+
+(Scripts-uFinIKPs) (venv) C:\Users\brian\Desktop\flask-fix-py\venv\Scripts>pipenv install gunicorn
+
+(Scripts-uFinIKPs) (venv) C:\Users\brian\Desktop\flask-fix-py\venv\Scripts>
+
+(Scripts-uFinIKPs) (venv) C:\Users\brian\Desktop\flask-fix-py\venv\Scripts>pipenv --help
+
+(Scripts-uFinIKPs) (venv) C:\Users\brian\Desktop\flask-fix-py\venv\Scripts>pipenv run pip freeze
+
+(Scripts-uFinIKPs) (venv) C:\Users\brian\Desktop\flask-fix-py\venv\Scripts>pipenv install pip freeze > ../../src/requirements.txt
+
+(Scripts-uFinIKPs) (venv) C:\Users\brian\Desktop\flask-fix-py\venv\Scripts>pipenv install flask --dev
+
+(Scripts-uFinIKPs) (venv) C:\Users\brian\Desktop\flask-fix-py\venv\Scripts>pipenv graph
+
+(Scripts-uFinIKPs) (venv) C:\Users\brian\Desktop\flask-fix-py\venv\Scripts>pipenv install flask --dev
