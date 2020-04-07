@@ -5,8 +5,6 @@
 
 cd project
 
-pip3 install pipenv
-
 pipenv install venv
 
 \venv\Scripts>activate/deactivate
