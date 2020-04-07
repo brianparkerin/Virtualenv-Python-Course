@@ -5,6 +5,8 @@
 
 cd project
 
+pip3 install pipenv
+
 pipenv install venv
 
 \venv\Scripts>activate/deactivate
@@ -12,6 +14,8 @@ pipenv install venv
 python -m venv venv or virtualenv <"nombre del projecto">
 
 venv\Scripts>activate
+
+\venv\Scripts>pipenv shell  or  (>exit) to exi
 
 
 #### Basic Commands to Activate my Project...
@@ -31,6 +35,8 @@ Microsoft Windows [Versión 10.0.00000.000]
 #### Other Commands...
 
 pip install virtualenv
+
+pip3 install pipenv
 
 python -m venv venv or virtualenv "nombre del projecto"
 
