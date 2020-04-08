@@ -13,7 +13,7 @@ python -m venv venv or virtualenv <"nombre del projecto">
 
 venv\Scripts>activate
 
-\venv\Scripts>pipenv shell  or  (>exit) to exi
+\venv\Scripts>pipenv shell  or  (>exit) to exit
 
 
 #### Basic Commands to Activate my Project...
@@ -34,8 +34,6 @@ Microsoft Windows [Versión 10.0.00000.000]
 
 pip install virtualenv
 
-pip3 install pipenv
-
 python -m venv venv or virtualenv "nombre del projecto"
 
 venv\Scripts>activate
@@ -43,6 +41,12 @@ venv\Scripts>activate
 pip -h   or    pip --help
 
 pipenv -h   or    pipenv --help
+
+pip freeze > ../../src/requirements.txt
+
+pip install flask or flask==2.0
+
+pip install gunicorn
 
 pip install python3.6.7 https://www.python.org/downloads/release/python-376/
 
