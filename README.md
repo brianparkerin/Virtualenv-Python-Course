@@ -40,6 +40,10 @@ python -m venv venv or virtualenv "nombre del projecto"
 
 venv\Scripts>activate
 
+pip -h   or    pip --help
+
+pipenv -h   or    pipenv --help
+
 pip install python3.6.7 https://www.python.org/downloads/release/python-376/
 
 
