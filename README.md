@@ -1,6 +1,18 @@
 # Virtualenv-Python-Course
 ### Crash Course: Viertualenv Windows &amp; Linux
 
+#### Basic Commands to Start & Activate Pipevnv...
+
+pip install pipenv
+
+or 
+
+pip3 install pipenv
+
+pipenv shell
+
+pipenv install discord.py
+
 #### Basic Commands to Start & Activate my Project...
 
 cd project
