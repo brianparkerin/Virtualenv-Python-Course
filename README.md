@@ -3,6 +3,8 @@
 
 #### Basic Commands to Start & Activate Pipevnv...
 
+cd project
+
 pip install pipenv
 
 or 
@@ -17,7 +19,7 @@ pipenv install discord.py
 
 cd project
 
-pipenv install venv
+python -m venv venv
 
 \venv\Scripts>activate/deactivate
 
@@ -46,7 +48,7 @@ Microsoft Windows [Versión 10.0.00000.000]
 
 pip install virtualenv
 
-python -m venv venv or virtualenv "nombre del projecto"
+virtualenv "nombre del projecto" or python -m venv venv 
 
 venv\Scripts>activate
 
