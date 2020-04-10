@@ -65,6 +65,28 @@ pip install gunicorn
 pip install python3.6.7 https://www.python.org/downloads/release/python-376/
 
 
+
+#### Start Virtualenv to make a PyBot...
+
+> Cd Project...
+ 
+ - Instalar...
+ 
+ > pip install pipenv   or   pip3 install pipenv
+ 
+ - En caso de ya tenerlo instalado de modo global en todo la computadora, ejecutamos...
+ 
+ > pipenv shell
+ 
+ - Comenzar a instalar modulos, librerias y dependencias dentro de nuestro "Pthon -bot Project", ejmp: API Discord.py ...
+ 
+ > pipenv install discord.py
+ 
+
+
+
+
+
 #### start Django or Flask Project...
 
  > Cd Project...
