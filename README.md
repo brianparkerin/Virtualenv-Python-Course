@@ -65,6 +65,28 @@ pip install gunicorn
 pip install python3.6.7 https://www.python.org/downloads/release/python-376/
 
 
+#### start Django or Flask Project...
+
+ > Cd Project...
+ 
+ - Instalar...
+ 
+ > pip install virtualenv
+ 
+ - En caso de ya tenerlo instalado de modo global en todo la computadora, ejecutamos...
+ 
+ > virualenv venv
+ 
+ > project> .\venv/scripts/activate.bat
+ 
+ - Comenzar a instalar modulos y dependencias dentro de nuestro projecto Flask o Django...
+ 
+ > pip install flask pymongo or pip install flask-pymongo
+ 
+ 
+
+
+
 ### Source:
 
 https://pipenv-es.readthedocs.io/es/latest/basics.html
